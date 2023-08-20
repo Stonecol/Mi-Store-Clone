@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Navbar } from "./components/Navbar";
-import { SmartPhones } from "./components/SmartPhones";
-import { SmartHome } from "./components/SmartHome";
-import { SmartOffice } from "./components/SmartOffice";
-import { LifeStyle } from "./components/LifeStyle";
-import { Homepage } from "./components/Homepage";
+import { SmartPhones } from "./pages/SmartPhones";
+import { SmartHome } from "./pages/SmartHome";
+import { SmartOffice } from "./pages/SmartOffice";
+import { LifeStyle } from "./pages/LifeStyle";
+import { Homepage } from "./pages/Homepage";
 
 function App() {
   return (
