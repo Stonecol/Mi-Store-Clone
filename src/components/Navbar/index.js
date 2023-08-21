@@ -5,7 +5,7 @@ export const Navbar = () => {
   const navigate = useNavigate();
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <button
           class="navbar-toggler"
           type="button"
@@ -20,9 +20,12 @@ export const Navbar = () => {
         <div class="collapse navbar-collapse d-flex justify-content-between full-width">
           <div class="navbar-nav mt-2 mt-lg-0 d-flex justify-content-between">
             <div class="nav-item active">
-              <a class="nav-link" onClick={() => {
-                  navigate("/home");
-                }}>
+              <a
+                class="nav-link"
+                onClick={() => {
+                  navigate("/");
+                }}
+              >
                 Home
               </a>
             </div>
@@ -37,9 +40,12 @@ export const Navbar = () => {
               </a>
             </div>
             <div class="nav-item">
-              <a class="nav-link" onClick={() => {
+              <a
+                class="nav-link"
+                onClick={() => {
                   navigate("/smart-office");
-                }}>
+                }}
+              >
                 Laptop & Tablet
               </a>
             </div>
@@ -54,9 +60,12 @@ export const Navbar = () => {
               </a>
             </div>
             <div class="nav-item">
-              <a class="nav-link" onClick={() => {
+              <a
+                class="nav-link"
+                onClick={() => {
                   navigate("/life-style");
-                }}>
+                }}
+              >
                 LifeStyle
               </a>
             </div>

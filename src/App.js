@@ -14,7 +14,7 @@ function App() {
         <Navbar />
       </div>
       <Routes>
-        <Route path="/home" element={<Homepage />}></Route>
+        <Route path="/" element={<Homepage />}></Route>
         <Route path="/phone" element={<SmartPhones />}></Route>
         <Route path="/smart-home" element={<SmartHome />}></Route>
         <Route path="/life-style" element={<LifeStyle />}></Route>

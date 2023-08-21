@@ -1,22 +1,16 @@
 import { DisplayCard } from "../DisplayCard";
-
-export const ProductsContainer = () => {
+export const ProductsContainer = ({props}) => {
   return (
     <>
-      <div className="conatiner">
+      <div className="conatiner p-4">
         <div className="row">
-          <div className="col-lg-3">
-            <DisplayCard />
-          </div>
-          <div className="col-lg-3">
-            <DisplayCard />
-          </div>
-          <div className="col-lg-3">
-            <DisplayCard />
-          </div>
-          <div className="col-lg-3">
-            <DisplayCard />
-          </div>
+          {props.map((product) => (
+            <>
+              <div className="col-lg-3 my-2">
+                <DisplayCard props={product} />
+              </div>
+            </>
+          ))}
         </div>
       </div>
     </>

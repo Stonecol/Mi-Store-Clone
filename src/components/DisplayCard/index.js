@@ -1,30 +1,27 @@
 import { Card, Button, Badge } from "react-bootstrap";
 import "./index.css";
-export const DisplayCard = () => {
+export const DisplayCard = ({ props }) => {
   return (
     <>
-      <Card style={{ width: "22rem" }}>
+      <Card className="border-0 c-card" style={{ width: "22rem" }}>
         <Card.Body>
-          <Badge bg="danger">11% off</Badge>
+          <Badge bg="danger">{`${props.discount}% off`}</Badge>
           <div className="c-content">
             <div>
-              <Card.Title className="c-title">Xiaomi 13 Pro</Card.Title>
-              <Card.Text className="c-font">From 79,999</Card.Text>
+              <Card.Title className="c-title">{props.name}</Card.Title>
+              <Card.Text className="c-font">{`From ${props.price}`}</Card.Text>
             </div>
           </div>
           <div className="m-1 c-content mt-3">
-            <Button variant="dark" className="m-1 px-4" size="sm">
+            <Button variant="dark" className="m-1 px-4 rounded-3" size="sm">
               Buy Now
             </Button>
-            <Button variant="outline-dark" className="m-1 px-4" size="sm">
+            <Button variant="outline-dark" className="m-1 px-4 rounded-3" size="sm">
               Learn More
             </Button>
           </div>
         </Card.Body>
-        <Card.Img
-          variant="top"
-          src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1677241587.64975684!348x348.jpg?f=webp"
-        />
+        <Card.Img variant="top" src={props.img} />
       </Card>
     </>
   );
