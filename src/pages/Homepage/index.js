@@ -1,9 +1,11 @@
+import { Button } from "react-bootstrap";
 import "./index.css";
-import { CarouselCard } from "../../components/Carouselcard";
 export const Homepage = () => {
   return (
     <>
-      <CarouselCard />
+      <div className="c-home-trending">
+        <Button variant="light" className="c-home-button">Shop Now</Button>
+      </div>
     </>
   );
 };

@@ -29,7 +29,7 @@ export const CarouselCard = () => {
           <img
             src="https://i03.appmifile.com/991_operator_in/17/08/2023/2bd298ba2f336b124e8d6e4ef557d670.jpg?f=webp"
             alt=""
-            className="d-block c-img"
+            className="d-block w-100 c-img"
           />
           <Carousel.Caption>
             <h3>Third slide label</h3>
