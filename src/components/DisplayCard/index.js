@@ -3,7 +3,7 @@ import "./index.css";
 export const DisplayCard = ({ props }) => {
   return (
     <>
-      <Card className="border-0 c-card" style={{ width: "22rem" }}>
+      <Card className="border-0 c-card" >
         <Card.Body>
           <Badge bg="danger">{`${props.discount}% off`}</Badge>
           <div className="c-content">
@@ -21,7 +21,7 @@ export const DisplayCard = ({ props }) => {
             </Button>
           </div>
         </Card.Body>
-        <Card.Img variant="top" src={props.img} />
+        <Card.Img className="display-img" variant="top" src={props.img} />
       </Card>
     </>
   );

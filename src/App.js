@@ -9,7 +9,7 @@ import { Homepage } from "./pages/Homepage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Mi-Store-Clone">
       <div className="App">
         <Navbar />
       </div>

@@ -13,7 +13,7 @@ export const smartTvs = [
     },{
         img: "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1663152565.22081554!348x348.jpg?f=webp",
         discount: 44,
-        name: "Xiaomi Smart TV 5A 80 cm (32 inch)",
+        name: "Xiaomi Smart TV 5A 80 cm",
         price:"13,999"
     },
     {
@@ -30,7 +30,7 @@ export const smartTvs = [
     },{
         img: "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1663152565.22081554!348x348.jpg?f=webp",
         discount: 44,
-        name: "Xiaomi Smart TV 5A 80 cm (32 inch)",
+        name: "Xiaomi Smart TV 5A 80 cm",
         price:"13,999"
     },
     {

@@ -6,7 +6,7 @@ export const ProductsContainer = ({props}) => {
         <div className="row">
           {props.map((product) => (
             <>
-              <div className="col-lg-3 my-2">
+              <div className="col-lg-3 col-md-4 col-sm my-2">
                 <DisplayCard props={product} />
               </div>
             </>
