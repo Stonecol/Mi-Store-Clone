@@ -1,8 +1,7 @@
 .c-carousel-controls {
   display: flex;
-  justify-content: start;
-  align-items: start;
   margin-bottom: 50px;
+  text-align: start !important;
 }
 
 .c-links{
@@ -22,4 +21,8 @@
   .right {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
+  }
+  .c-btn{
+    font-weight: 600 !important;
+    padding: 0.3rem 1.5rem !important;
   }

@@ -1,7 +1,11 @@
+import { CarouselCard } from "../../components/Carouselcard";
+import { ProductsContainer } from "../../components/ProductsContainer";
+import { lifestyle, lifestyleCarouselData } from "../../dummyData/lifeStyle";
 export const LifeStyle = () => {
   return (
     <>
-      <div>LifeStyle</div>
+      <CarouselCard props={lifestyleCarouselData}/>
+      <ProductsContainer props={lifestyle} />
     </>
   );
 };

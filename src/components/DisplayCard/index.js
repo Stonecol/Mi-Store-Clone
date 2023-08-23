@@ -9,7 +9,7 @@ export const DisplayCard = ({ props }) => {
           <div className="c-content">
             <div>
               <Card.Title className="c-title">{props.name}</Card.Title>
-              <Card.Text className="c-font">{`From ${props.price}`}</Card.Text>
+              <Card.Text className="c-font">{`From ₹${props.price}`}</Card.Text>
             </div>
           </div>
           <div className="m-1 c-content mt-3">
@@ -21,7 +21,7 @@ export const DisplayCard = ({ props }) => {
             </Button>
           </div>
         </Card.Body>
-        <Card.Img className="display-img" variant="top" src={props.img} />
+        <Card.Img className="display-img mb-4" variant="top" src={props.img} />
       </Card>
     </>
   );

@@ -1,11 +1,11 @@
 import { CarouselCard } from "../../components/Carouselcard";
 import { ProductsContainer } from "../../components/ProductsContainer";
-import { phones } from "../../dummyData/phones";
+import { phones, phonesCarouselData } from "../../dummyData/phones";
 export const SmartPhones = () => {
   return (
     <>
-      <CarouselCard />
-      <ProductsContainer props={phones}/>
+      <CarouselCard props={phonesCarouselData} />
+      <ProductsContainer props={phones} />
     </>
   );
 };

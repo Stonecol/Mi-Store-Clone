@@ -1,10 +1,10 @@
 import { CarouselCard } from "../../components/Carouselcard";
 import { ProductsContainer } from "../../components/ProductsContainer";
-import { smartTvs } from "../../dummyData/smartTvs";
+import { smaartTvCarouselData, smartTvs } from "../../dummyData/smartTvs";
 export const SmartHome = () => {
   return (
     <>
-      <CarouselCard />
+      <CarouselCard props={smaartTvCarouselData}/>
       <ProductsContainer props={smartTvs}/>
     </>
   );

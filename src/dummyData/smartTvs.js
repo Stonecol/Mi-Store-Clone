@@ -52,3 +52,27 @@ export const smartTvs = [
     },
     
 ]
+
+export const smaartTvCarouselData = [
+    {
+        img: "https://i03.appmifile.com/702_operator_in/17/08/2023/43cbbb1a12bd2be36da68e2d7aab706b.jpg?f=webp",
+        para1: "Big is Back",
+        name: "Xiaomi Smart TV X Series",
+        para2: "",
+        price: "28,999"
+      },
+      {
+        img: "https://i03.appmifile.com/361_operator_in/17/08/2023/ae3de5a372f6d1adb8d5a6717a9792eb.jpg?f=webp",
+        para1: "Designed by Xiaomi. Powered by Google",
+        name: "Xiaomi Smart TV X Pro Series",
+        para2: "Premium Metal Bezel-less Design",
+        price: "49,999"
+      },
+      {
+        img: "https://i03.appmifile.com/983_operator_in/23/08/2023/52d3bffec0bf6b4114d9f89e1b8b8238.jpg?f=webp",
+        para1: "Snappier and Smoother",
+        name: "Xiaomi Smart TV A Series",
+        para2: "",
+        price: "24,999"
+      },
+]

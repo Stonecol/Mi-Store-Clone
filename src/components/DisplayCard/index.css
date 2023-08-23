@@ -1,6 +1,8 @@
 .c-title {
   font-weight: 600 !important;
   font-size: 1.625rem;
+  display: flex;
+  justify-content: center;
 }
 .c-font {
   font-size: 1.125rem;
@@ -8,10 +10,7 @@
   display: flex;
   justify-content: center;
 }
-.c-title{
-  display: flex;
-  justify-content: center;
-}
+
 .c-content {
   display: flex;
   justify-content: center;
