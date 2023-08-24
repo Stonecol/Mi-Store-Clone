@@ -25,6 +25,7 @@ export const Navbar = () => {
                 onClick={() => {
                   navigate("/");
                 }}
+                href="#"
               >
                 Home
               </a>
@@ -35,6 +36,7 @@ export const Navbar = () => {
                 onClick={() => {
                   navigate("/phone");
                 }}
+                href="#"
               >
                 Phone
               </a>
@@ -45,6 +47,7 @@ export const Navbar = () => {
                 onClick={() => {
                   navigate("/smart-office");
                 }}
+                href="#"
               >
                 Laptop & Tablet
               </a>
@@ -55,6 +58,7 @@ export const Navbar = () => {
                 onClick={() => {
                   navigate("/smart-home");
                 }}
+                href="#"
               >
                 TV & Smart Home
               </a>
@@ -65,6 +69,7 @@ export const Navbar = () => {
                 onClick={() => {
                   navigate("/life-style");
                 }}
+                href="#"
               >
                 LifeStyle
               </a>
