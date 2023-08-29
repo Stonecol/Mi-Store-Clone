@@ -1,7 +1,6 @@
 {
   "name": "mi-store-clone",
   "version": "0.1.0",
-  "homepage": "https://Stonecol.github.io/Mi-Store-Clone",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
