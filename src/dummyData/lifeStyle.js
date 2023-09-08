@@ -38,8 +38,14 @@ export const lifestyle = [
   {
     img: "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1662530043.20853301!256x256.jpg?f=webp",
     discount: 45,
-    name: "Xiomi Grooming Kit",
+    name: "Xiaomi Grooming Kit",
     price: "1,099",
+  },
+  {
+    img: "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1579000327.41389918!348x348.png?f=webp",
+    discount: 57,
+    name: "Xiaomi Earphones",
+    price: "429",
   },
 ];
 

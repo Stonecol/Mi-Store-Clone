@@ -2,7 +2,7 @@ export const laptops = [
   {
     img: "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1661833895.57191049!256x256.jpg?f=webp",
     discount: 17,
-    name: "Xiomi Notebook Pro 120G",
+    name: "Xiaomi Notebook Pro",
     price: "64,999",
   },
   {
@@ -20,7 +20,7 @@ export const laptops = [
   {
     img: "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1650896467.04424744!256x256.jpg?f=webp",
     discount: 11,
-    name: "Xiani Pad 5",
+    name: "Xiaomi Pad 5",
     price: "24,999",
   },
   {
@@ -40,6 +40,12 @@ export const laptops = [
     discount: 11,
     name: "Mi Notebook 14",
     price: "41,999",
+  },
+  {
+    img: "https://i03.appmifile.com/526_item_in/10/06/2023/bae81fc259485c6a570c49a0588f1143!348x348.jpg?f=webp",
+    discount: 32,
+    name: "Xiaomi Pad 6",
+    price: "26,999",
   },
 ];
 

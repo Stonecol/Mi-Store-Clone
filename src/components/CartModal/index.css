@@ -1,0 +1,35 @@
+.quantity{
+    display: flex ;
+    justify-content: center ;
+}
+
+.quantity p{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.item-details{
+    background: #ececec;
+    padding: 1rem;
+}
+
+.price-details{
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center;
+    margin: 0.2rem;
+}
+
+.price-details p{
+    margin: 0;
+}
+
+.item-discount{
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.8rem;
+}
+
+.total-price{
+    font-size: 1.4rem;
+}
