@@ -1,0 +1,31 @@
+.counter-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9e8e8;
+  border-radius: 0.5rem;
+  height: 2.4rem;
+  width:25%;
+}
+.counter-wrapper span{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin:4px 0;
+  width:33%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.counter-wrapper span.count{
+  font-size: 1.3rem;
+  border-right: 1px solid rgba(0,0,0,0.2);
+  border-left: 1px solid rgba(0,0,0,0.2);
+  pointer-events: none;
+
+}
+
+.counter-wrapper span:hover{
+  background: #dcdcdc;
+  border-radius: 0.5rem;
+}

@@ -1,9 +1,14 @@
 import { Card, Button, Badge } from "react-bootstrap";
 import "./index.css";
+import { CartModal } from "../CartModal";
+import { useState } from "react";
+
 export const DisplayCard = ({ props }) => {
+  const [show, setShow] = useState(false);
+  const handleShow = () => setShow(true);
   return (
     <>
-      <Card className="border-0 c-card" >
+      <Card className="border-0 c-card">
         <Card.Body>
           <Badge bg="danger">{`${props.discount}% off`}</Badge>
           <div className="c-content">
@@ -13,10 +18,20 @@ export const DisplayCard = ({ props }) => {
             </div>
           </div>
           <div className="m-1 c-content mt-3">
-            <Button variant="dark" className="m-1 px-4 rounded-3" size="sm">
+            <Button
+              variant="dark"
+              className="m-1 px-4 rounded-3"
+              size="sm"
+              onClick={handleShow}
+            >
               Buy Now
             </Button>
-            <Button variant="outline-dark" className="m-1 px-4 rounded-3" size="sm">
+            <CartModal show={show} setShow={setShow} productDetails={props} />
+            <Button
+              variant="outline-dark"
+              className="m-1 px-4 rounded-3"
+              size="sm"
+            >
               Learn More
             </Button>
           </div>

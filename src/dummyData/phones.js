@@ -41,6 +41,12 @@ export const phones = [
     name: "Redmi Note 12",
     price: "13,999",
   },
+  {
+    img: "https://i03.appmifile.com/334_item_in/03/06/2023/52c652fe50e7d5aa9ab464b2cdd50c5b!348x348.jpg?f=webp",
+    discount: 27,
+    name: "Redmi A2",
+    price: "6,499",
+  },
 ];
 
 export const phonesCarouselData = [
