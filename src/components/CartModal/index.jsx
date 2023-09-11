@@ -1,8 +1,17 @@
 import { Modal, Button } from "react-bootstrap";
 import { Counter } from "../Counter";
 import "./index.css";
+import { useContext } from "react";
+import { AppContext } from "../../context/appContext";
 export const CartModal = ({ show, setShow, productDetails }) => {
+  const {appState,setAppState} = useContext(AppContext);
   const handleClose = () => setShow(false);
+  const handleAddtoCart = () => {
+    const newState = {...appState,cartSize:appState.cartSize+1}
+    setAppState(newState);
+    setShow(false)
+  }
+
   return (
     <>
       <Modal show={show} onHide={handleClose}>
@@ -17,8 +26,10 @@ export const CartModal = ({ show, setShow, productDetails }) => {
           <div className="item-details">
             <div className="price-details">
               <p>{productDetails.name}</p>
-              <p>₹{productDetails.price} <span className="item-discount">₹2000</span></p>
-              
+              <p>
+                ₹{productDetails.price}{" "}
+                <span className="item-discount">₹2000</span>
+              </p>
             </div>
             <div className="price-details">
               <p>Total:</p>
@@ -27,7 +38,10 @@ export const CartModal = ({ show, setShow, productDetails }) => {
           </div>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="dark" onClick={handleClose}>
+          <Button variant="dark" onClick={handleAddtoCart}>
+            Add to Cart
+          </Button>
+          <Button variant="outline-dark" onClick={handleClose}>
             Close
           </Button>
         </Modal.Footer>

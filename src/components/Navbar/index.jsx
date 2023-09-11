@@ -1,8 +1,12 @@
+import { useContext } from "react";
 import "./index.css";
 import { useNavigate } from "react-router-dom";
+import { AppContext } from "../../context/appContext";
+
 
 export const Navbar = () => {
   const navigate = useNavigate();
+  const context = useContext(AppContext)
   return (
     <>
       <div className="nav-bar">
@@ -15,9 +19,7 @@ export const Navbar = () => {
                   navigate("/");
                 }}
               >
-                <a className="c-nav-links" href="#">
-                  Home
-                </a>
+                <a className="c-nav-links">Home</a>
               </div>
               <div
                 className="nav-item"
@@ -25,9 +27,7 @@ export const Navbar = () => {
                   navigate("/phone");
                 }}
               >
-                <a className="c-nav-links" href="#">
-                  Phone
-                </a>
+                <a className="c-nav-links">Phone</a>
               </div>
               <div
                 className="nav-item"
@@ -35,9 +35,7 @@ export const Navbar = () => {
                   navigate("/smart-home");
                 }}
               >
-                <a className="c-nav-links" href="#">
-                  TV & Smart Home
-                </a>
+                <a className="c-nav-links">TV & Smart Home</a>
               </div>
               <div
                 className="nav-item"
@@ -45,9 +43,7 @@ export const Navbar = () => {
                   navigate("/smart-office");
                 }}
               >
-                <a className="c-nav-links" href="#">
-                  Laptop & Tablet
-                </a>
+                <a className="c-nav-links">Laptop & Tablet</a>
               </div>
               <div
                 className="nav-item"
@@ -55,14 +51,13 @@ export const Navbar = () => {
                   navigate("/life-style");
                 }}
               >
-                <a className="c-nav-links" href="#">
-                  LifeStyle
-                </a>
+                <a className="c-nav-links">LifeStyle</a>
               </div>
             </div>
             <div className="d-flex">
               <div className="my-icons">
                 <i class="bi bi-cart"></i>
+                {context.appState.cartSize > 0 && <span className="cart-value">{context.appState.cartSize}</span>}
               </div>
               <div className="my-icons">
                 <i class="bi bi-person"></i>
