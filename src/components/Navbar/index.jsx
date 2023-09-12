@@ -3,10 +3,9 @@ import "./index.css";
 import { useNavigate } from "react-router-dom";
 import { AppContext } from "../../context/appContext";
 
-
 export const Navbar = () => {
   const navigate = useNavigate();
-  const context = useContext(AppContext)
+  const context = useContext(AppContext);
   return (
     <>
       <div className="nav-bar">
@@ -55,9 +54,18 @@ export const Navbar = () => {
               </div>
             </div>
             <div className="d-flex">
-              <div className="my-icons">
+              <div
+                className="my-icons"
+                onClick={() => {
+                  navigate("/cart");
+                }}
+              >
                 <i class="bi bi-cart"></i>
-                {context.appState.cartSize > 0 && <span className="cart-value">{context.appState.cartSize}</span>}
+                {context.appState.cartSize > 0 && (
+                  <span className="cart-value">
+                    {context.appState.cartSize}
+                  </span>
+                )}
               </div>
               <div className="my-icons">
                 <i class="bi bi-person"></i>

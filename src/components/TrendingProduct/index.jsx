@@ -1,8 +1,10 @@
 import { Button } from "react-bootstrap";
-export const Trending = ({props}) => {
+import "./index.css";
+export const Trending = ({ props }) => {
   return (
     <>
-      <div className={props.bg}>
+      <div className="c-home-trending">
+        <img src={props.bg} />
         <div className="c-home-content">
           <h1 className="c-home-title">{props.name}</h1>
           <h3>{props.para1}</h3>

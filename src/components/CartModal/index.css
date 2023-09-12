@@ -11,6 +11,7 @@
 .item-details{
     background: #ececec;
     padding: 1rem;
+    border-radius: 0.5rem;
 }
 
 .price-details{

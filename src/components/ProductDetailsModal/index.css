@@ -1,0 +1,23 @@
+
+.product-details-container{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-image{  
+    width: 50%;
+    display: block;
+}
+
+.product-specs{
+    background: #ececec;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 50%;
+    text-align: center;
+}
+
+.product-specs h2{
+   margin-bottom: 2rem;
+}
