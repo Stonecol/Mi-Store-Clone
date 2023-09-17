@@ -1,36 +1,3 @@
-.c-home-trending-1 {
-  width: 100%;
-  height: 520px;
-  background-image: url("https://i03.appmifile.com/180_operator_in/01/09/2023/4113c2a46fb6fe507db1db285dad2776.jpg?f=webp");
-  background-repeat: no-repeat;
-  background-size: 1519px 500px;
-  color: #fff;
-  padding: 150px 150px 240px;
-}
-
-.c-home-trending-2 {
-  width: 100%;
-  height: 520px;
-  background-image: url("https://i03.appmifile.com/55_operator_in/10/08/2023/91c71943fbf754b397c5b923fa54db17.jpg?f=webp");
-  background-repeat: no-repeat;
-  background-size: 1519px 500px;
-  color: #fff;
-  padding: 150px 150px 240px;
-}
-
-.c-home-trending-3 {
-  width: 100%;
-  height: 520px;
-  background-image: url("https://i03.appmifile.com/900_operator_in/10/08/2023/4d1e1e75ddc8555e76500c8b21c768a6.jpg?f=webp");
-  background-repeat: no-repeat;
-  background-size: 1519px 500px;
-  color: #fff;
-  padding: 150px 150px 240px;
-}
-
-.c-homepage-button{
-  margin-top: 1.5rem;
-}
-.c-home-title{
-  font-weight: 600 !important;
+.homepage-container {
+  margin-top: 3.6rem;
 }

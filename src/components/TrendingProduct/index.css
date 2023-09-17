@@ -1,0 +1,21 @@
+.c-homepage-button {
+  margin-top: 1.5rem;
+}
+.c-home-title {
+  font-weight: 600 !important;
+}
+.c-home-content {
+  position: absolute;
+  top: 8rem;
+  color: #fff;
+  left: 5rem;
+}
+
+.c-home-trending img{
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.c-home-trending{
+  position: relative;
+}

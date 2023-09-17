@@ -6,6 +6,7 @@ import { SmartOffice } from "./pages/SmartOffice";
 import { LifeStyle } from "./pages/LifeStyle";
 import { Homepage } from "./pages/Homepage";
 import { AppState } from "./context/AppState";
+import { Cart } from "./pages/Cart";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/smart-home" element={<SmartHome />}></Route>
             <Route path="/life-style" element={<LifeStyle />}></Route>
             <Route path="/smart-office" element={<SmartOffice />}></Route>
+            <Route path="/cart" element={<Cart />}></Route>
           </Routes>
         </BrowserRouter>
       </div>

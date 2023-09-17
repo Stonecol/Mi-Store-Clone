@@ -4,9 +4,11 @@ import { trending } from "../../dummyData/trending";
 export const Homepage = () => {
   return (
     <>
-      {trending.map((product) => {
-        return (<Trending props={product} />)
-      })}
+      <div className="homepage-container">
+        {trending.map((product) => {
+          return <Trending props={product} />;
+        })}
+      </div>
     </>
   );
 };

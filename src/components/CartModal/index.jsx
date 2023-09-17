@@ -16,7 +16,7 @@ export const CartModal = ({ show, setShow, productDetails }) => {
     <>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Product Details</Modal.Title>
+          <Modal.Title>Price Details</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="quantity">
