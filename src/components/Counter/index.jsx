@@ -1,9 +1,9 @@
 import { useState } from "react";
 import "./index.css";
 export const Counter = () => {
-  const [val, setVal] = useState(0);
+  const [val, setVal] = useState(1);
   const handleMinus = () => {
-    if (val > 0) setVal(val - 1);
+    if (val > 1) setVal(val - 1);
   };
   const handlePlus = () => {
     if (val < 5) setVal(val + 1);

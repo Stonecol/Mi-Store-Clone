@@ -4,13 +4,14 @@ import "./index.css";
 import { useContext } from "react";
 import { AppContext } from "../../context/appContext";
 export const CartModal = ({ show, setShow, productDetails }) => {
-  const {appState,setAppState} = useContext(AppContext);
+  const { appState, setAppState } = useContext(AppContext);
   const handleClose = () => setShow(false);
   const handleAddtoCart = () => {
-    const newState = {...appState,cartSize:appState.cartSize+1}
-    setAppState(newState);
-    setShow(false)
-  }
+    const newCartItems = [...appState.cartItems]
+    newCartItems.push(productDetails)
+    setAppState({ cartItems: newCartItems });
+    setShow(false);
+  };
 
   return (
     <>
@@ -27,7 +28,7 @@ export const CartModal = ({ show, setShow, productDetails }) => {
             <div className="price-details">
               <p>{productDetails.name}</p>
               <p>
-                ₹{productDetails.price}{" "}
+                ₹{productDetails.price}
                 <span className="item-discount">₹2000</span>
               </p>
             </div>

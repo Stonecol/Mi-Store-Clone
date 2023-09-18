@@ -61,9 +61,9 @@ export const Navbar = () => {
                 }}
               >
                 <i class="bi bi-cart"></i>
-                {context.appState.cartSize > 0 && (
+                {context.appState.cartItems.length > 0 && (
                   <span className="cart-value">
-                    {context.appState.cartSize}
+                    {context.appState.cartItems.length}
                   </span>
                 )}
               </div>
