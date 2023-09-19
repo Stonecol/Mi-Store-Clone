@@ -7,6 +7,7 @@ import { LifeStyle } from "./pages/LifeStyle";
 import { Homepage } from "./pages/Homepage";
 import { AppState } from "./context/AppState";
 import { Cart } from "./pages/Cart";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/smart-office" element={<SmartOffice />}></Route>
             <Route path="/cart" element={<Cart />}></Route>
           </Routes>
+          <Footer />
         </BrowserRouter>
       </div>
     </AppState>
