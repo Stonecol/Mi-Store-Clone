@@ -5,14 +5,45 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import "./index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { InputGroup, Form, Button } from "react-bootstrap";
 const FooterForm = () => {
   return (
     <>
       <div className="footer-social">
-        <FontAwesomeIcon icon={faFacebookSquare} className="foot-social-icon"/>
-        <FontAwesomeIcon icon={faTwitterSquare} className="foot-social-icon"/>
-        <FontAwesomeIcon icon={faSquareInstagram} className="foot-social-icon"/>
-        
+        <h6 className="social-header">FOLLOW Mi</h6>
+        <div>
+          <FontAwesomeIcon
+            icon={faFacebookSquare}
+            className="foot-social-icon"
+          />
+          <FontAwesomeIcon
+            icon={faTwitterSquare}
+            className="foot-social-icon"
+          />
+          <FontAwesomeIcon
+            icon={faSquareInstagram}
+            className="foot-social-icon"
+          />
+        </div>
+        <h6>Let's stay in touch</h6>
+        <div>
+          <div className="footer-email-field">
+            <input
+              type="email"
+              className="footer-email-input"
+              placeholder="Enter email address"
+              aria-label="Enter email address"
+              aria-describedby="submit-email"
+            />
+            <button
+              className="btn btn-outline-secondary footer-btn"
+              type="button"
+              id="submit-email"
+            >
+              <i className="bi bi-chevron-right"></i>
+            </button>
+          </div>
+        </div>
       </div>
     </>
   );
@@ -145,7 +176,6 @@ export const Footer = () => {
             </ul>
           </div>
           <div className="footer-col col-lg-4 col-md-12">
-            <h6 className="social-header">FOLLOW Mi</h6>
             <FooterForm />
           </div>
         </div>

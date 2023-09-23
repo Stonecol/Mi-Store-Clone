@@ -3,6 +3,7 @@ import "./index.css";
 export const ProductDetailsModal = ({
   showProductDetails,
   setShowProductDetails,
+  productDetails
 }) => {
   const handleClose = () => setShowProductDetails(false);
   return (
@@ -15,11 +16,11 @@ export const ProductDetailsModal = ({
           <div className="product-details-container">
             <img
               className="product-image"
-              src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1650980960.19661951!600x600!85.jpg"
+              src={productDetails.img}
               alt=""
             />
             <div className="product-specs">
-              <h2>Xiaomi 12 Pro 5G</h2>
+              <h2>{productDetails.name}</h2>
               <div>
                 <h4>Specifications</h4>
               </div>

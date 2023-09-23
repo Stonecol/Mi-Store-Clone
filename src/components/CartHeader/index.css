@@ -1,0 +1,9 @@
+.cart-header-container {
+    text-align: center;
+    align-items: center;
+    display: grid;
+    background-color: #fff;
+    grid-template-columns: 25% 30% 15% 15% 15%;
+    color: #929292;
+    padding: 1rem;
+  }

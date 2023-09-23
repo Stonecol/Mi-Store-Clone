@@ -38,7 +38,7 @@ export const DisplayCard = ({ props }) => {
             >
               Learn More
             </Button>
-            <ProductDetailsModal showProductDetails={showProductDetails} setShowProductDetails={setShowProductDetails}/>
+            <ProductDetailsModal showProductDetails={showProductDetails} setShowProductDetails={setShowProductDetails} productDetails={props}/>
           </div>
         </Card.Body>
         <Card.Img className="display-img mb-4" variant="top" src={props.img} />
