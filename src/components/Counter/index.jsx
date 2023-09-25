@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./index.css";
-export const Counter = () => {
-  const [val, setVal] = useState(1);
+export const Counter = ({val, setVal}) => {
   const handleMinus = () => {
     if (val > 1) setVal(val - 1);
   };

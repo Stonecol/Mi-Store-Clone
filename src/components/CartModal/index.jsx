@@ -3,12 +3,24 @@ import { Counter } from "../Counter";
 import "./index.css";
 import { useContext } from "react";
 import { AppContext } from "../../context/appContext";
+import { findCartItem } from "../../utils/utils";
+import { useState } from "react";
 export const CartModal = ({ show, setShow, productDetails }) => {
+  const [val, setVal] = useState(1);
   const { appState, setAppState } = useContext(AppContext);
   const handleClose = () => setShow(false);
+
   const handleAddtoCart = () => {
-    const newCartItems = [...appState.cartItems]
-    newCartItems.push(productDetails)
+    const newCartItems = [...appState.cartItems];
+    const item = findCartItem(newCartItems, productDetails.name);
+    if (item.length > 0) {
+      let index = newCartItems.indexOf(item[0]);
+      newCartItems[index].qty += val;
+    } else {
+      const product = productDetails;
+      product.qty = val;
+      newCartItems.push(product);
+    }
     setAppState({ cartItems: newCartItems });
     setShow(false);
   };
@@ -22,7 +34,7 @@ export const CartModal = ({ show, setShow, productDetails }) => {
         <Modal.Body>
           <div className="quantity">
             <p>Qty:</p>
-            <Counter />
+            <Counter val={val} setVal={setVal} />
           </div>
           <div className="item-details">
             <div className="price-details">

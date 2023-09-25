@@ -6,16 +6,16 @@
 }
 .c-home-content {
   position: absolute;
-  top: 8rem;
+  top: 25%;
   color: #fff;
-  left: 5rem;
+  left: 8%;
 }
 
-.c-home-trending img{
+.c-home-trending img {
   margin-bottom: 10px;
   width: 100%;
 }
 
-.c-home-trending{
+.c-home-trending {
   position: relative;
 }

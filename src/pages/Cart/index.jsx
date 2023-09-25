@@ -21,7 +21,7 @@ export const Cart = () => {
           <div className="cart-container">
             <CartHeader />
             {cartItems.map((item) => (
-              <CartItem productDetails={item} />
+              <CartItem productDetails={item} cartItems={cartItems} setAppState={setAppState} />
             ))}
           </div>
         </>

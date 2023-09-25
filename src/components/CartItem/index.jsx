@@ -1,15 +1,18 @@
+import { useState } from "react";
 import { Counter } from "../Counter";
 import "./index.css";
 
-export const CartItem = ({productDetails}) => {
+export const CartItem = ({ productDetails, cartItems, setAppState }) => {
+  const reduceQty = (val) => {
+    const index = cartItems.indexOf(productDetails);
+    cartItems[index].qty=val;
+    setAppState({ cartItems: cartItems });
+  };
   return (
     <>
       <div className="row cart-item-container">
         <div className="col-lg-2 cart-item-image">
-          <img
-            src={productDetails.img}
-            alt=""
-          />
+          <img src={productDetails.img} alt="" />
         </div>
         <div className="col-lg-4 cart-item-name">
           <h5>{productDetails.name} </h5>
@@ -20,7 +23,7 @@ export const CartItem = ({productDetails}) => {
           <h6>₹1,999</h6>
         </div>
         <div className="col-lg-2 cart-item-quantity">
-          <Counter />
+          <Counter val={productDetails.qty} setVal={reduceQty} />
         </div>
         <div className="col-lg-2 cart-item-total">
           <h5>₹{productDetails.price}</h5>
