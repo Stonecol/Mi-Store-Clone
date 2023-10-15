@@ -60,7 +60,7 @@ export const Navbar = () => {
                   navigate("/cart");
                 }}
               >
-                <i class="bi bi-cart"></i>
+                <i className="bi bi-cart"></i>
                 {context.appState.cartItems.length > 0 && (
                   <span className="cart-value">
                     {context.appState.cartItems.length}
@@ -68,7 +68,7 @@ export const Navbar = () => {
                 )}
               </div>
               <div className="my-icons">
-                <i class="bi bi-person"></i>
+                <i className="bi bi-person"></i>
               </div>
             </div>
           </div>

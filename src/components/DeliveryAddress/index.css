@@ -1,0 +1,17 @@
+.delivery-address-container {
+  display: flex;
+  justify-content: end;
+  padding-left: 3rem;
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.delivery-header {
+  display: inline-block;
+}
+
+.delivery-header h5 {
+  border-bottom: 1px solid #cacaca;
+  padding: 1.2rem 0;
+}
+

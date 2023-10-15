@@ -1,0 +1,27 @@
+
+.summary-item-img {
+    height: 4rem;
+    margin-right: 1rem;
+  }
+  
+  .order-summary-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .summary-item__price-discounted {
+    margin-right: 1rem;
+  }
+  
+  .summary-item__price-original {
+    color: #898989;
+    text-decoration: line-through;
+  }
+  
+  .summary-item__details p{
+    margin-bottom: 0.2rem;
+  }
+  
+  .summary-item__details-qty{
+    color: #898989;
+  }

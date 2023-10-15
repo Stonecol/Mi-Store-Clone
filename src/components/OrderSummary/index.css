@@ -1,0 +1,56 @@
+.order-summary-container {
+  background-color: #fff;
+  padding: 2.5rem;
+}
+
+.order-summary__header {
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.order-summary__qty {
+  font-weight: 600;
+}
+
+.summary__total-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.summary__total-section div h5 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.summary__total-section div h4 {
+  margin-bottom: 1rem;
+  color: #ff6900;
+  font-weight: 600;
+}
+
+.summary__total-section div p{
+  margin-bottom: 0.2rem;
+}
+
+.summary__total-section-left{
+  text-align: right;
+}
+
+.summary__coupon-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary__coupon-section div h5 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.summary__coupon-section div p{
+  margin-bottom: 0.2rem;
+}
+
+.coupons{
+  color: #ff6900;
+}
