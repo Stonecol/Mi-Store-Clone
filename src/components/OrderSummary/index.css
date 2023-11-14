@@ -54,3 +54,11 @@
 .coupons{
   color: #ff6900;
 }
+
+.summary_coupon-link{
+  text-decoration: none;
+}
+
+.summary_pay-section{
+  margin-top: 1rem;
+}
