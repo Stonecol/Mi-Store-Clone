@@ -3,10 +3,16 @@ import { AppContext } from "../../context/appContext";
 import { SummaryItem } from "../SummaryItem";
 import "./index.css";
 import { findCartTotal, formatPrice } from "../../utils/utils";
+import { Sidebar } from "../Sidebar";
+import { useState } from "react";
+import { Button } from "react-bootstrap";
 
 export const OrderSummary = () => {
   const { appState, setAppState } = useContext(AppContext);
   const { cartItems } = appState;
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <>
       <div className="order-summary-container">
@@ -47,8 +53,18 @@ export const OrderSummary = () => {
               <p>0 coupons available</p>
             </div>
             <div>
-              <p className="coupons">Apply coupons</p>
+              <Sidebar show={show} handleClose={handleClose} />
+              <a
+                className="summary_coupon-link"
+                href="#coupons"
+                onClick={handleShow}
+              >
+                <p className="coupons">Apply coupons</p>
+              </a>
             </div>
+          </div>
+          <div className="summary_pay-section d-grid">
+            <Button variant="dark" className="summary_pay-btn">Pay Now</Button>
           </div>
         </div>
       </div>

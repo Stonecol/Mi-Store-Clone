@@ -1,0 +1,53 @@
+.sidebar__coupon-header {
+  font-weight: 700;
+  margin: 0 1.5rem;
+}
+
+.sidebar__avaiable-tab{
+    color: #ff6a00;
+}
+
+.sidebar__coupon-container {
+  margin: 0 2rem;
+}
+
+.sidebar__coupon-container span {
+  margin-right: 1rem;
+}
+
+.sidebar__coupon-input-label {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.sidebar-coupon-field {
+  position: relative;
+  display: inline-block;
+}
+
+.sidebar-coupon-input:focus {
+  all: unset;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  border: 1px solid #c1c0c0;
+  color: #000;
+  box-shadow: 1px 1px 1px 0.1rem #ff6a00a8, -1px -1px 1px 0.1rem #ff6a00a8;
+  width: 18rem;
+}
+
+.sidebar-coupon-input {
+  all: unset;
+  color: #000;
+  border-radius: 0.5rem;
+  border: 1px solid #d0d0d0;
+  padding: 0.3rem;
+  width: 18rem;
+}
+
+.sidebar-btn {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  z-index: 3;
+  border: none !important;
+}
